@@ -1,4 +1,7 @@
 ---
-- name: "Install needed packages"
+- name: "Update cache"
+  package:
+    update_cache: true
+- name: "Ensure needed packages are installed"
   package:
     name: "python3-module-pkg_resources"
